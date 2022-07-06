@@ -2,14 +2,16 @@
 
 .notion-code {
   background-color: rgba(249, 250, 251, 1);
-  border: 1px solid rgba(229, 231, 235, 1);
+  border: 2px solid rgba(229, 231, 235, 1);
   border-radius: 0.375rem;
   padding: 1.5em !important;
+  white-space: pre-wrap;
 }
 
 .dark-mode .notion-code {
-  background-color: rgba(17, 24, 39, 1);
-  border-color: rgba(55, 65, 81, 1);
+  /* background-color: rgba(17, 24, 39, 1); */
+  background-color: #1b1b1b;
+  border-color: rgb(77, 94, 121);
 }
 .notion code {
   color: rgba(31, 41, 55, 1);
@@ -24,12 +26,12 @@
 
 .dark-mode .notion .notion-inline-code {
   background: rgb(71, 76, 80) !important;
-  color: #ff4081;
+  color: rgb(80 156 203);
   padding: 0.2em 0.4em !important;
 }
 
 .notion .notion-inline-code {
-  color: #ff4081;
+  color: rgb(80 156 203);
   background: rgba(127, 122, 107, 0.1) !important;
   padding: 0.2em 0.4em !important;
 }
@@ -122,4 +124,18 @@ pre[class*='language-'] > code {
 pre[class*='language-']:before,
 pre[class*='language-']:after {
   display: none !important;
+}
+
+.dark-mode {
+  --bg-color: #202020;
+  --bg-color-0: #2e2e2e;
+  --bg-color-1: #383838;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }

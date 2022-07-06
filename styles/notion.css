@@ -7,7 +7,7 @@
  * places to add some flare.
  */
 
-.notion {
+ .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
 }
@@ -17,8 +17,33 @@
   line-height: 1.65;
 }
 
-.index-page {
+.index-page, .tags-page {
   --notion-max-width: 900px;
+}
+
+.tags-page .notion-collection-header {
+  display: none;
+}
+
+.tags-page .notion-collection-card-cover {
+  display: none;
+}
+
+.tags-page .notion-property-select,
+.tags-page .notion-property-multi_select{
+  justify-content: center;
+}
+
+.tags-page .notion-collection-card-property {
+  text-align: center;
+}
+
+.tags-page .notion-gallery {
+  padding-top: 2em;
+}
+
+.tags-page .notion-gallery-grid {
+  padding-top: 4em;
 }
 
 .notion-text {
@@ -381,4 +406,97 @@
 
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
+}
+
+/*title size */
+.notion-page-title-text{
+  border-bottom: 0px solid;
+  font-size: 1.05em;
+}
+
+/*home page title*/
+.notion-column .notion-page-title-text{
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.notion-collection-header{
+  display: none;
+}
+
+.notion-page-icon-inline {
+  display: none;
+}
+
+/*hide icon */
+/* .notion-page-icon-image {
+  display: none;
+} */
+
+.notion-hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.notion-h-title, .notion-h1, .notion-h2, .notion-h3{
+  margin-top: 0.7em;
+}
+
+.notion-h {
+  line-height: 1.1;
+}
+
+.notion-page-link{
+  text-align: center;
+}
+/*centering*/
+.notion-page-title, .notion-page-title-text{
+  width: 100%;
+  text-align: center;
+}
+
+/* Home Page */
+.index-page .notion-title{
+  display: none;
+}
+
+.index-page h2:first-of-type{
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.notion-block-3a82081ec4e04043bba89a842b8fe108{
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 6px;
+  line-height: 1.2;
+}
+/* intro paragraph */
+.notion-block-f75c3f9527794b6782fb62549fe2deea,
+.notion-block-078d407c5a124be6b7ba33166ae4868c{
+  font-size: 1.1em;
+  line-height: 0.75;
+  margin: 0px;
+}
+
+.notion-collection-card-property{
+  text-align: center;
+}
+
+.breadcrumb {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+/* Hide Nav Blocks on Page */
+.index-page .notion-block-63f39d5c950e4e54b392b5cfefb670bb, 
+.index-page .notion-block-d8427a52f05f4ddbab6cf63290710ca3 {
+  display: none;
+}
+
+/* hide galleries */
+/* .notion-block-790aa87fe8b34c1f8bc5cd5998d0c3a4, */
+.notion-block-1112f0dfcdc145618303e5963e304c8e,
+.notion-block-f5d3791856364c3d99c54f68a9d974bc{
+  display:none;
 }
