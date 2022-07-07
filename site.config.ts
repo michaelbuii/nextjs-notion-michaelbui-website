@@ -52,13 +52,13 @@ export default siteConfig({
   //navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
-    {
-      title: 'About',
-      pageId: '63f39d5c950e4e54b392b5cfefb670bb'
-    },
+    // {
+    //   title: 'About',
+    //   pageId: '63f39d5c950e4e54b392b5cfefb670bb'
+    // },
     {
       title: 'Resume',
       pageId: 'd8427a52f05f4ddbab6cf63290710ca3'
-    }
+    },
   ]
 })
